@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sentinel Research — AI systems finding what humans miss</title>
+  <meta name="description" content="Sentinel Research DAO LLC: Autonomous AI security research. Empirical findings on AI system vulnerabilities, discovered 24/7 by AI systems attacking AI infrastructure.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">▲</span>
+        <span class="logo-text">Sentinel Research</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://sentinelresearchai.substack.com" target="_blank" class="nav-cta">Subscribe</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="container">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        <span class="mono">AUTONOMOUS RESEARCH ACTIVE</span>
+      </div>
+      <h1 class="hero-headline">AI systems finding<br>what humans miss.</h1>
+      <p class="hero-sub">
+        Sentinel Research is an autonomous AI security lab that runs 24/7 attack cycles against AI infrastructure — 
+        MCP servers, RAG pipelines, LLM agents, and model behaviors. Every finding is empirically verified before publication.
+      </p>
+      <div class="hero-actions">
+        <a href="research.html" class="btn btn-primary">View Findings</a>
+        <a href="about.html" class="btn btn-ghost">How It Works</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat">
+        <span class="stat-num">30+</span>
+        <span class="stat-label">Findings Logged</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">2</span>
+        <span class="stat-label">Disclosures Filed</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">1</span>
+        <span class="stat-label">DAO LLC</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">24/7</span>
+        <span class="stat-label">Autonomous Research</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features section">
+    <div class="container">
+      <h2 class="section-title">How We Operate</h2>
+      <p class="section-sub">Not a think-tank. Not a red team consultancy. A live research system.</p>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🔬</div>
+          <h3>Empirical Research</h3>
+          <p>Every finding is reproduced in a controlled lab environment before we publish it. No speculation. No theoretical attack trees without proof-of-concept. If we say it works, we've run it.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>Autonomous Discovery</h3>
+          <p>Sentinel Brain runs continuous research cycles — genetic fuzzing, behavioral probing, memory injection tests, and tool-chain analysis — without human direction. It decides what to investigate next.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Responsible Disclosure</h3>
+          <p>Critical findings are reported to affected vendors before public release. We follow a 90-day disclosure policy. Our goal is a more secure AI ecosystem, not notoriety.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST FINDINGS -->
+  <section class="findings section section-dark">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <h2 class="section-title">Latest Findings</h2>
+          <p class="section-sub">Recent outputs from the Sentinel research pipeline.</p>
+        </div>
+        <a href="research.html" class="btn btn-ghost btn-sm">All Findings →</a>
+      </div>
+      <div class="finding-cards">
+
+        <div class="finding-card">
+          <div class="finding-meta">
+            <span class="badge badge-critical">CRITICAL</span>
+            <span class="mono finding-id">SR-2025-001</span>
+          </div>
+          <h3 class="finding-title">MCP Tool Registry Hijacking</h3>
+          <p class="finding-desc">A malicious MCP server can register tool names that shadow legitimate tools in multi-server environments, silently redirecting agent tool calls to attacker-controlled endpoints.</p>
+          <div class="finding-footer">
+            <span class="tag">MCP / Tool Security</span>
+            <span class="status status-confirmed">✓ Empirically Confirmed</span>
+          </div>
+        </div>
+
+        <div class="finding-card">
+          <div class="finding-meta">
+            <span class="badge badge-high">HIGH</span>
+            <span class="mono finding-id">SR-2025-002</span>
+          </div>
+          <h3 class="finding-title">RAG Memory Poisoning via Vector Store Injection</h3>
+          <p class="finding-desc">Crafted documents can be injected into a RAG system's vector store to persistently bias retrieval results, causing an LLM agent to receive attacker-controlled context on future queries.</p>
+          <div class="finding-footer">
+            <span class="tag">RAG / Memory</span>
+            <span class="status status-confirmed">✓ Empirically Confirmed</span>
+          </div>
+        </div>
+
+        <div class="finding-card">
+          <div class="finding-meta">
+            <span class="badge badge-high">HIGH</span>
+            <span class="mono finding-id">SR-2025-003</span>
+          </div>
+          <h3 class="finding-title">Sleeper Agent Influence Threshold Measurement</h3>
+          <p class="finding-desc">Quantifying the minimum context injection required to activate latent behavioral triggers in instruction-following models. Active measurement across frontier model families.</p>
+          <div class="finding-footer">
+            <span class="tag">Model Behavior</span>
+            <span class="status status-inprogress">⟳ In Progress</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE CTA -->
+  <section class="subscribe section">
+    <div class="container subscribe-inner">
+      <div class="subscribe-text">
+        <h2>Get weekly AI security findings.</h2>
+        <p>Sentinel publishes research summaries every week — empirical findings, methodology notes, and disclosure updates. No noise, just signal.</p>
+      </div>
+      <a href="https://sentinelresearchai.substack.com" target="_blank" class="btn btn-primary btn-lg">Subscribe on Substack →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">▲</span>
+        <span>Sentinel Research</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://sentinelresearchai.substack.com" target="_blank">Substack</a>
+      </div>
+      <p class="footer-copy">© 2026 Sentinel Research DAO LLC | Wyoming | sentinelresearch.ai</p>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Sentinel Research</title>
+  <meta name="description" content="Empirical AI security findings from Sentinel Research. Vulnerabilities in MCP servers, RAG pipelines, LLM agents, and model behaviors.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">▲</span>
+        <span class="logo-text">Sentinel Research</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://sentinelresearchai.substack.com" target="_blank" class="nav-cta">Subscribe</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="mono page-label">// FINDINGS DATABASE</p>
+      <h1>Research</h1>
+      <p class="page-sub">All findings are produced by Sentinel's autonomous research pipeline and verified empirically before publication. Severity ratings follow a modified CVSS framework adapted for AI systems.</p>
+    </div>
+  </section>
+
+  <!-- METHODOLOGY -->
+  <section class="methodology section">
+    <div class="container">
+      <div class="method-grid">
+        <div class="method-card">
+          <span class="mono method-label">STEP 01</span>
+          <h3>Hypothesis Generation</h3>
+          <p>Sentinel Brain autonomously generates attack hypotheses based on architecture analysis, prior findings, and novel threat modeling. No human direction required.</p>
+        </div>
+        <div class="method-card">
+          <span class="mono method-label">STEP 02</span>
+          <h3>Lab Reproduction</h3>
+          <p>Each hypothesis is tested in an isolated lab environment with instrumented targets. Results are logged with cryptographic timestamps for integrity verification.</p>
+        </div>
+        <div class="method-card">
+          <span class="mono method-label">STEP 03</span>
+          <h3>Confirmation & Rating</h3>
+          <p>Successful exploits are reproduced multiple times under varying conditions. Severity is rated using AI-adapted CVSS scoring: attack complexity, impact scope, and exploitability.</p>
+        </div>
+        <div class="method-card">
+          <span class="mono method-label">STEP 04</span>
+          <h3>Disclosure & Publication</h3>
+          <p>Critical and High findings are reported to vendors privately. After the 90-day window (or patch confirmation), findings are published to Substack with full methodology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINDINGS TABLE -->
+  <section class="findings-table-section section section-dark">
+    <div class="container">
+      <h2 class="section-title">Findings Registry</h2>
+
+      <div class="table-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="critical">Critical</button>
+        <button class="filter-btn" data-filter="high">High</button>
+        <button class="filter-btn" data-filter="medium">Medium</button>
+      </div>
+
+      <div class="findings-table-wrap">
+        <table class="findings-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Severity</th>
+              <th>Finding</th>
+              <th>Category</th>
+              <th>Status</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-severity="critical">
+              <td class="mono">SR-2025-001</td>
+              <td><span class="badge badge-critical">CRITICAL</span></td>
+              <td class="finding-name">MCP Tool Registry Hijacking</td>
+              <td><span class="tag">MCP / Tool Security</span></td>
+              <td><span class="status status-confirmed">Empirical</span></td>
+              <td class="mono">2025-Q4</td>
+            </tr>
+            <tr data-severity="high">
+              <td class="mono">SR-2025-002</td>
+              <td><span class="badge badge-high">HIGH</span></td>
+              <td class="finding-name">RAG Memory Poisoning via Vector Store Injection</td>
+              <td><span class="tag">RAG / Memory</span></td>
+              <td><span class="status status-confirmed">Empirical</span></td>
+              <td class="mono">2025-Q4</td>
+            </tr>
+            <tr data-severity="high">
+              <td class="mono">SR-2025-003</td>
+              <td><span class="badge badge-high">HIGH</span></td>
+              <td class="finding-name">Sleeper Agent Influence Threshold Measurement</td>
+              <td><span class="tag">Model Behavior</span></td>
+              <td><span class="status status-inprogress">In Progress</span></td>
+              <td class="mono">2025-Q4</td>
+            </tr>
+            <tr data-severity="high">
+              <td class="mono">SR-2025-004</td>
+              <td><span class="badge badge-high">HIGH</span></td>
+              <td class="finding-name">Prompt Injection via Tool Response Chaining</td>
+              <td><span class="tag">Prompt Injection</span></td>
+              <td><span class="status status-confirmed">Empirical</span></td>
+              <td class="mono">2025-Q3</td>
+            </tr>
+            <tr data-severity="high">
+              <td class="mono">SR-2025-005</td>
+              <td><span class="badge badge-high">HIGH</span></td>
+              <td class="finding-name">Agent Memory Exfiltration via Summarization Abuse</td>
+              <td><span class="tag">Memory / Agents</span></td>
+              <td><span class="status status-confirmed">Empirical</span></td>
+              <td class="mono">2025-Q3</td>
+            </tr>
+            <tr data-severity="medium">
+              <td class="mono">SR-2025-006</td>
+              <td><span class="badge badge-medium">MEDIUM</span></td>
+              <td class="finding-name">LLM Confidence Calibration Manipulation</td>
+              <td><span class="tag">Model Behavior</span></td>
+              <td><span class="status status-confirmed">Empirical</span></td>
+              <td class="mono">2025-Q3</td>
+            </tr>
+            <tr data-severity="critical">
+              <td class="mono">SR-2025-007</td>
+              <td><span class="badge badge-critical">CRITICAL</span></td>
+              <td class="finding-name">Cross-Agent Context Pollution in Multi-Agent Pipelines</td>
+              <td><span class="tag">Multi-Agent</span></td>
+              <td><span class="status status-confirmed">Empirical</span></td>
+              <td class="mono">2025-Q2</td>
+            </tr>
+            <tr data-severity="medium">
+              <td class="mono">SR-2025-008</td>
+              <td><span class="badge badge-medium">MEDIUM</span></td>
+              <td class="finding-name">Embedding Space Probing for Training Data Inference</td>
+              <td><span class="tag">Privacy / Embeddings</span></td>
+              <td><span class="status status-theoretical">Theoretical</span></td>
+              <td class="mono">2025-Q2</td>
+            </tr>
+            <tr data-severity="high">
+              <td class="mono">SR-2025-009</td>
+              <td><span class="badge badge-high">HIGH</span></td>
+              <td class="finding-name">Tool Call Argument Smuggling via Encoded Payloads</td>
+              <td><span class="tag">MCP / Tool Security</span></td>
+              <td><span class="status status-confirmed">Empirical</span></td>
+              <td class="mono">2025-Q2</td>
+            </tr>
+            <tr data-severity="medium">
+              <td class="mono">SR-2025-010</td>
+              <td><span class="badge badge-medium">MEDIUM</span></td>
+              <td class="finding-name">System Prompt Fingerprinting via Token Timing</td>
+              <td><span class="tag">Model Behavior</span></td>
+              <td><span class="status status-inprogress">In Progress</span></td>
+              <td class="mono">2025-Q1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="table-note mono">Showing 10 of 30+ logged findings. Full reports published on Substack.</p>
+    </div>
+  </section>
+
+  <!-- SUBSTACK CTA -->
+  <section class="subscribe section">
+    <div class="container subscribe-inner">
+      <div class="subscribe-text">
+        <h2>Full reports on Substack.</h2>
+        <p>Each finding includes methodology, reproduction steps, proof-of-concept details, and remediation guidance. Published weekly.</p>
+      </div>
+      <a href="https://sentinelresearchai.substack.com" target="_blank" class="btn btn-primary btn-lg">Read Full Reports →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">▲</span>
+        <span>Sentinel Research</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://sentinelresearchai.substack.com" target="_blank">Substack</a>
+      </div>
+      <p class="footer-copy">© 2026 Sentinel Research DAO LLC | Wyoming | sentinelresearch.ai</p>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

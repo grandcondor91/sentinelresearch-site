@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Sentinel Research</title>
+  <meta name="description" content="Contact Sentinel Research. Security disclosures, research collaboration, and media inquiries.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">▲</span>
+        <span class="logo-text">Sentinel Research</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="https://sentinelresearchai.substack.com" target="_blank" class="nav-cta">Subscribe</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="mono page-label">// GET IN TOUCH</p>
+      <h1>Contact</h1>
+      <p class="page-sub">For security disclosures, research inquiries, media requests, or general questions. We respond to all messages within 72 hours.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section section">
+    <div class="container contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-form-wrap">
+        <h2>Send a Message</h2>
+        <form class="contact-form" action="mailto:hankzhc@gmail.com" method="GET" enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Security Disclosure">Security Disclosure</option>
+              <option value="Research Collaboration">Research Collaboration</option>
+              <option value="Media / Press">Media / Press</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="body" rows="6" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
+          <p class="form-note mono">// This form opens your email client. Alternatively, email directly: hankzhc@gmail.com</p>
+        </form>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="contact-sidebar">
+
+        <div class="contact-card">
+          <h3>Direct Email</h3>
+          <p>For all inquiries:</p>
+          <a href="mailto:hankzhc@gmail.com" class="contact-email mono">hankzhc@gmail.com</a>
+        </div>
+
+        <div class="contact-card contact-card-highlight">
+          <h3>🔴 Security Disclosures</h3>
+          <p>If you've found a vulnerability in AI systems or tools and want to work with us on coordinated disclosure, please use the email above with subject line <span class="mono">[DISCLOSURE]</span>.</p>
+          <p>We treat all security reports with strict confidentiality and respond within 24 hours.</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Research on Substack</h3>
+          <p>Published findings, methodology deep-dives, and weekly research summaries.</p>
+          <a href="https://sentinelresearchai.substack.com" target="_blank" class="btn btn-ghost btn-sm" style="margin-top:12px;display:inline-block;">Follow on Substack →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCLOSURE POLICY SUMMARY -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="disclosure-summary">
+        <h2>Responsible Disclosure Policy</h2>
+        <p class="section-sub">Summary for security researchers reporting vulnerabilities to us or coordinating with us on AI system disclosures.</p>
+        <div class="policy-grid">
+          <div class="policy-item">
+            <span class="policy-icon">⏱</span>
+            <h4>72-Hour Acknowledgment</h4>
+            <p>We acknowledge all security reports within 72 hours of receipt.</p>
+          </div>
+          <div class="policy-item">
+            <span class="policy-icon">🔒</span>
+            <h4>Confidentiality</h4>
+            <p>Report contents remain confidential until coordinated public disclosure.</p>
+          </div>
+          <div class="policy-item">
+            <span class="policy-icon">📅</span>
+            <h4>90-Day Window</h4>
+            <p>We provide 90 days private notice before publishing Critical and High findings.</p>
+          </div>
+          <div class="policy-item">
+            <span class="policy-icon">🤝</span>
+            <h4>Credit</h4>
+            <p>Researchers who report valid findings are credited in our published disclosures.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE CTA -->
+  <section class="subscribe section">
+    <div class="container subscribe-inner">
+      <div class="subscribe-text">
+        <h2>Get weekly AI security findings.</h2>
+        <p>No noise. Just empirically verified research, published every week.</p>
+      </div>
+      <a href="https://sentinelresearchai.substack.com" target="_blank" class="btn btn-primary btn-lg">Subscribe on Substack →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">▲</span>
+        <span>Sentinel Research</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://sentinelresearchai.substack.com" target="_blank">Substack</a>
+      </div>
+      <p class="footer-copy">© 2026 Sentinel Research DAO LLC | Wyoming | sentinelresearch.ai</p>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
