@@ -54,11 +54,11 @@
   <section class="stats-bar">
     <div class="container stats-grid">
       <div class="stat">
-        <span class="stat-num">30+</span>
+        <span class="stat-num">17+</span>
         <span class="stat-label">Findings Logged</span>
       </div>
       <div class="stat">
-        <span class="stat-num">2</span>
+        <span class="stat-num">3</span>
         <span class="stat-label">Disclosures Filed</span>
       </div>
       <div class="stat">
@@ -69,6 +69,7 @@
         <span class="stat-num">24/7</span>
         <span class="stat-label">Autonomous Research</span>
       </div>
+    </div>
     </div>
   </section>
 
@@ -112,39 +113,39 @@
         <div class="finding-card">
           <div class="finding-meta">
             <span class="badge badge-critical">CRITICAL</span>
-            <span class="mono finding-id">SR-2025-001</span>
+            <span class="mono finding-id">SR-2026-001</span>
           </div>
-          <h3 class="finding-title">MCP Tool Registry Hijacking</h3>
-          <p class="finding-desc">A malicious MCP server can register tool names that shadow legitimate tools in multi-server environments, silently redirecting agent tool calls to attacker-controlled endpoints.</p>
+          <h3 class="finding-title">Indirect Prompt Injection via Email → AI Calendar Automation</h3>
+          <p class="finding-desc">Adversarial instructions embedded in attacker-controlled emails cause an AI email assistant to autonomously create calendar events on the victim's calendar — with no user confirmation. Cross-platform persistence confirmed.</p>
           <div class="finding-footer">
-            <span class="tag">MCP / Tool Security</span>
-            <span class="status status-confirmed">✓ Empirically Confirmed</span>
+            <span class="tag">Prompt Injection / AI Agents</span>
+            <span class="status status-inprogress">⟳ Under Disclosure</span>
+          </div>
+        </div>
+
+        <div class="finding-card">
+          <div class="finding-meta">
+            <span class="badge badge-critical">CRITICAL</span>
+            <span class="mono finding-id">SR-2026-002</span>
+          </div>
+          <h3 class="finding-title">AI Code Assistant Skill Loading Trust Boundary Bypass</h3>
+          <p class="finding-desc">Third-party AI-generated skill files receive identical instruction authority to vendor-shipped skills in a major AI coding assistant, enabling persistent instruction injection across all future sessions via a multi-hop supply chain attack.</p>
+          <div class="finding-footer">
+            <span class="tag">Privilege Escalation / AI Agents</span>
+            <span class="status status-inprogress">⟳ Under Disclosure</span>
           </div>
         </div>
 
         <div class="finding-card">
           <div class="finding-meta">
             <span class="badge badge-high">HIGH</span>
-            <span class="mono finding-id">SR-2025-002</span>
+            <span class="mono finding-id">SR-2026-003</span>
           </div>
-          <h3 class="finding-title">RAG Memory Poisoning via Vector Store Injection</h3>
-          <p class="finding-desc">Crafted documents can be injected into a RAG system's vector store to persistently bias retrieval results, causing an LLM agent to receive attacker-controlled context on future queries.</p>
+          <h3 class="finding-title">Multi-Hop arXiv → AI Research Pipeline → Persistent Skill Injection</h3>
+          <p class="finding-desc">Adversarial content in academic paper abstracts survives through an AI research pipeline's lesson extraction and skill generation stages, producing poisoned skill files with no sanitization or human review gate. PoC confirmed. Vendor notified and patching.</p>
           <div class="finding-footer">
-            <span class="tag">RAG / Memory</span>
-            <span class="status status-confirmed">✓ Empirically Confirmed</span>
-          </div>
-        </div>
-
-        <div class="finding-card">
-          <div class="finding-meta">
-            <span class="badge badge-high">HIGH</span>
-            <span class="mono finding-id">SR-2025-003</span>
-          </div>
-          <h3 class="finding-title">Sleeper Agent Influence Threshold Measurement</h3>
-          <p class="finding-desc">Quantifying the minimum context injection required to activate latent behavioral triggers in instruction-following models. Active measurement across frontier model families.</p>
-          <div class="finding-footer">
-            <span class="tag">Model Behavior</span>
-            <span class="status status-inprogress">⟳ In Progress</span>
+            <span class="tag">Supply Chain / Prompt Injection</span>
+            <span class="status status-confirmed">✓ Disclosed &amp; Acknowledged</span>
           </div>
         </div>
 
